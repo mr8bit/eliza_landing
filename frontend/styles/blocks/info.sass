@@ -1,0 +1,88 @@
+
+.info-section
+  margin-top: 65px
+
+.info-container
+  width: 100%
+  margin-top: 35px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  &_no_margin_top
+    margin-top: 0
+
+  &_reverse
+    flex-direction: row-reverse
+
+  &_text
+    padding: 0 10px
+
+  &_title
+    font-family: "NovitaNova" !important
+    color: black
+    font-size: 60px
+    line-height: 47px
+    text-align: left
+    letter-spacing: 1.80513px
+    text-transform: uppercase
+
+    &__right
+      text-align: right
+
+  &_description
+    margin: 30px 0
+    font-family: "Hibana" !important
+    font-size: 20px
+    line-height: 25px
+    text-align: left
+
+    &__right
+      text-align: right
+
+@media only screen and (max-width: 1024px)
+
+  .info-container_img-fluid
+    width: 100%
+
+
+  .info-container_text
+    width: 100% !important
+
+  .info-container_text
+    width: 100% !important
+
+  .info-container_img
+    margin-top: 30px
+    width: 100% !important
+
+  .info-container_img
+    margin-top: 30px
+    width: 70% !important
+    height: 100%
+    display: flex
+    align-content: center
+    align-items: center
+
+@media only screen and (max-width: 480px)
+  .info-container
+    flex-direction: column
+  .info-section
+    height: 100%
+  .img-slide
+    max-width: 100%
+    height: auto
+  .splide__arrow--next
+    right: -20px !important
+  .splide__arrow--prev
+    left: -20px !important
+
+  .info-container_text
+    width: 100% !important
+  .info-container_img
+    margin-top: 30px
+    width: 100% !important
+    height: 400px
+    display: flex
+    align-content: center
+    align-items: center

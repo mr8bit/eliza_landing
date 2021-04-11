@@ -1,0 +1,99 @@
+.ReactModal__Overlay
+  opacity: 0
+  transition: all 500ms ease-in-out
+
+
+.ReactModal__Overlay--after-open
+  opacity: 1
+
+
+.ReactModal__Overlay--before-close
+  opacity: 0
+
+
+.ReactModal__Overlay
+  background-color: rgba(0, 0, 0, 0.4) !important
+
+.ReactModal__Content
+  width: 45%
+  height: 50vh
+  margin: calc(70vh - 50vh) auto 0
+  border-radius: 30px !important
+
+
+.result
+  display: flex
+  flex-direction: column
+  justify-items: center
+  justify-content: center
+  align-items: center
+  align-content: center
+  width: 100%
+  height: 100%
+  margin-top: 60px
+
+  &-form
+    height: 256px
+
+  &-title
+    font-family: "NovitaNova" !important
+    text-transform: uppercase
+    color: black
+    font-size: 45px
+    text-align: center
+    line-height: 45px
+
+  &-description
+    font-family: "Hibana" !important
+    text-align: center
+    font-size: 18px
+
+.modal
+  &-title
+    font-family: "NovitaNova" !important
+    text-transform: uppercase
+    color: black
+    font-size: 45px
+    line-height: 45px
+  &-form
+    margin-top: 20px
+
+  &-body
+    padding: 10px
+
+  &-description
+    font-family: "Hibana" !important
+    font-size: 18px
+
+  &-close
+    cursor: pointer
+
+  &-header
+    padding: 10px 10px
+    display: flex
+    justify-content: space-between
+
+.results
+  justify-content: flex-end
+
+@media only screen and (max-width: 1024px)
+  .ReactModal__Content
+    width: auto
+    inset: auto 40px !important
+    height: auto
+
+  .result
+    &-form
+      height: 398px
+
+
+@media only screen and (max-width: 480px)
+  .ReactModal__Content
+    inset: auto 10px !important
+    height: auto
+    margin: 10px 0
+    width: auto
+
+  .result
+    &-form
+      height: 398px

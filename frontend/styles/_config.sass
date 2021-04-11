@@ -1,0 +1,33 @@
+@import '../node_modules/bootstrap/scss/bootstrap-reboot'
+// Bootstrap Reboot collection
+@import '../node_modules/bootstrap/scss/mixins/breakpoints'
+// Bootstrap Breakpoints mixin
+
+.modal_is_open
+  overflow: hidden
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+  @font-face
+    font-family: $fname
+    font-style: $fstyle
+    font-weight: $fweight
+    src: url($furl) format('woff2')
+
+
+@include font('NovitaNova', normal, 400, '../fonts/NovitaNova/4402-font.woff2')
+@include font('radiovolnda', normal, 400, '../fonts/RadioVolna/17265.woff2')
+@include font('Hibana', medium, 500, '../fonts/Hibana/Hibana-SubMedium.woff2')
+
+
+.mt-0
+  margin-top: 0
+.mt-2
+  margin-top: 10px
+
+@media only screen and (max-width: 1024px)
+  .mt-send
+    margin-top: 20px
+
+@media only screen and (max-width: 480px)
+  .mt-send
+    margin-top: 20px

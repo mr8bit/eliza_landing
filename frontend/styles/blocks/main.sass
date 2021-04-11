@@ -1,0 +1,86 @@
+.main
+  &-section
+    width: 100%
+    height: 100vh
+    background: url('/img/eliza_bg.svg')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+  &-center
+    height: 100%
+    flex-direction: column
+    display: flex
+    align-content: center
+    align-items: center
+    justify-content: center
+
+  .logo
+    width: 156px
+
+.main-group
+  margin-top: 50px
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+
+
+  &_scroll
+    margin-top: -15vh
+
+    .mouse
+      opacity: 0.5
+
+  &-scroll
+    &-text
+      margin-top: 20px
+      font-family: "Hibana" !important
+      font-size: 14px
+
+  &_center
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    align-content: center
+
+  &_title
+    font-family: "radiovolnda" !important
+    font-size: 100px
+    line-height: 100px
+    color: black
+    text-transform: uppercase
+    text-align: center
+
+    &_2
+      width: 599px
+      color: black
+      font-family: "NovitaNova" !important
+      font-size: 65px
+      line-height: 78px
+      text-align: center
+      letter-spacing: 1.95556px
+      text-transform: uppercase
+
+
+  &_description
+    font-family: "Hibana" !important
+    font-size: 26px
+    text-align: center
+
+@media only screen and (max-width: 480px)
+  .main-group
+    margin-top: 20px
+  .main-group_center
+    margin-top: -24vh
+
+  .main-group_description
+    font-size: 18px
+  .main-group_title_2
+    width: 100%
+    font-size: 50px
+    line-height: 60px
+  .main-group_title
+    font-size: 80px
+    line-height: 95px

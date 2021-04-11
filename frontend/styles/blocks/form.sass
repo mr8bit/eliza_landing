@@ -1,0 +1,98 @@
+.form
+  margin-top: 50px
+  width: 100%
+  display: flex
+  justify-content: space-between
+
+  &-half
+    width: 50%
+
+  &-group
+    margin: 0
+    margin-right: 10px
+
+  &-control
+    font-family: "Hibana" !important
+    display: block
+    width: 100%
+    padding: 20px 30px
+    font-size: 18px
+    letter-spacing: 0.421198px
+    font-weight: 400
+    line-height: 1.5
+    color: #898989
+    background-color: #E9E9E8
+    background-clip: padding-box
+    border: 1px solid #E9E9E8
+    appearance: none
+    border-radius: 33px
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+    outline: none
+
+    &:active
+      border-color: #FF755F
+
+    &:focus
+      border-color: #FF755F
+
+  &-footer
+    display: flex
+    justify-content: center
+    justify-items: center
+    margin-top: 20px
+
+  textarea
+    margin-left: 10px
+    resize: none
+
+
+@media only screen and (max-width: 1024px)
+  .form
+    flex-direction: column
+
+    &-half
+      width: 100%
+
+    &-group
+      height: 100%
+      display: block
+      margin-bottom: 0px
+      margin-top: 20px
+      margin-left: 0 !important
+      margin-right: 0 !important
+
+    &-footer
+      margin-top: 30px
+
+      .btn_link
+        width: 100%
+
+
+    textarea
+      margin-left: 0px
+
+
+@media only screen and (max-width: 480px)
+  .form
+    flex-direction: column
+
+    &-half
+      width: 100%
+
+    &-group
+      height: 100%
+      display: block
+      margin-bottom: 0px
+      margin-top: 20px
+      margin-left: 0 !important
+      margin-right: 0 !important
+
+    &-footer
+      margin-top: 30px
+
+      .btn_link
+        width: 100%
+
+
+    textarea
+      margin-left: 0px
