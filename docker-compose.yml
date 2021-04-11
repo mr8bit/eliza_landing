@@ -8,11 +8,7 @@ services:
       - ./.env
     image: umputun/nginx-le:latest
     volumes:
-      - hack_static:/usr/src/app/staticfiles
-      - hack_media:/usr/src/app/media
       - ./service.conf:/etc/nginx/service.conf
-    volumes_from:
-      - backend
     links:
       - backend:backend
       - frontend:frontend
