@@ -2,6 +2,24 @@ version: '3.7'
 
 services:
 
+  nginx:
+    restart: always
+    env_file:
+      - ./.env
+    image: umputun/nginx-le:latest
+    volumes:
+      - hack_static:/usr/src/app/staticfiles
+      - hack_media:/usr/src/app/media
+      - ./service.conf:/etc/nginx/service.conf
+    volumes_from:
+      - backend
+    links:
+      - backend:backend
+      - frontend:frontend
+    ports:
+      - 80:80
+      - 443:443
+      -
   backend:
     container_name: backend
     restart: always
