@@ -2,7 +2,6 @@ from fastapi import FastAPI, BackgroundTasks
 from pydantic import BaseModel
 from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
 from starlette.responses import JSONResponse
-from starlette.middleware import Middleware
 from starlette.middleware.cors import CORSMiddleware
 import os
 
@@ -39,7 +38,7 @@ class QuestionUser(BaseModel):
     text: str
 
 
-@app.post("/request")
+@app.post("/api/request")
 async def update_item(background_tasks: BackgroundTasks, request: RequestUser) -> JSONResponse:
     message1 = MessageSchema(
         subject="Eliza: Спасибо вам!",
@@ -66,7 +65,7 @@ async def update_item(background_tasks: BackgroundTasks, request: RequestUser) -
     return JSONResponse(status_code=200, content={"complete": True})
 
 
-@app.post("/question")
+@app.post("/api/question")
 async def update_item(background_tasks: BackgroundTasks, request: QuestionUser) -> JSONResponse:
     message1 = MessageSchema(
         subject="Eliza: Спасибо вам!",

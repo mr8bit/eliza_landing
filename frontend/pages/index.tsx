@@ -41,11 +41,6 @@ const SOCIAL_NETWORKS: ISocialItem[] = [
         link: "https://vk.com/mr8bit"
     },
 ]
-const schema = yup.object().shape({
-    email: yup.string().email().required(),
-    name: yup.string().required(),
-    text: yup.string().required(),
-});
 
 yup.setLocale({
     string: {
@@ -56,6 +51,12 @@ yup.setLocale({
         default: 'Недопустимый формат'
     }
 });
+const schema = yup.object().shape({
+    email: yup.string().email().required(),
+    name: yup.string().required(),
+    text: yup.string().required(),
+});
+
 export default function Home() {
 
     const [modalIsOpen, setModalIsOpen] = useState(false)
@@ -174,7 +175,7 @@ export default function Home() {
                                 Проверить группы
                             </a>
                         </Info.Text>
-                        <Info.Image style={{width: "35%"}}>
+                        <Info.Image style={{width: "35%", height:"100%"}}>
 
                             <Slider/>
 

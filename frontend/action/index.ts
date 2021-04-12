@@ -13,7 +13,7 @@ function checkHttpStatus(response) {
 
 export const Action = {
     sendRequest: (data) => {
-        return fetch(`${URl_BACKEND}/request`, {
+        return fetch(`${URl_BACKEND}/api/request`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ export const Action = {
             })
     },
     sendQuestion: (data) => {
-        return fetch(`${URl_BACKEND}/question`, {
+        return fetch(`${URl_BACKEND}/api/question`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
