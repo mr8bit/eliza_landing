@@ -52,7 +52,7 @@ async def update_item(background_tasks: BackgroundTasks, request: RequestUser) -
     )
     message2 = MessageSchema(
         subject="Eliza: Новый пользователь!",
-        recipients=["mr8bit@yandex.ru"],
+        recipients=["mr8bit@yandex.ru", "leonidts99@yandex.ru"],
         body={
             'email': request.dict().get("email"),
             'name': request.dict().get("name"),
@@ -79,7 +79,7 @@ async def update_item(background_tasks: BackgroundTasks, request: QuestionUser) 
     )
     message2 = MessageSchema(
         subject="Eliza: Новый пользователь!",
-        recipients=["mr8bit@yandex.ru"],
+        recipients=["mr8bit@yandex.ru", "leonidts99@yandex.ru"],
         body={
             'email': request.dict().get("email"),
             'name': request.dict().get("name"),
