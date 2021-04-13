@@ -299,7 +299,7 @@ export default function Home() {
 
             <Footer
                 social={SOCIAL_NETWORKS}
-                email={"info@eliza.ru"}
+                email={"info@eliza.care"}
                 phone={"+7(916)986-45-58"}
             />
 
